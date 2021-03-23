@@ -6,7 +6,7 @@
   grid-template-areas:
     "header header header header"
     "player-one character-select character-select cpu";
-  height: 100vh;
+  height: 95vh;
 }
 
 .header { 
@@ -16,7 +16,6 @@
 
 .player-one { 
   grid-area: player-one; 
-  align-self: end;
 }
 
 .character-select {
@@ -30,10 +29,10 @@
   grid-area: character-select;
   text-align: center;
   align-self: end;
+  border: solid black 4px;
 }
 
 .cpu { 
   grid-area: cpu; 
-  align-self: end;
   text-align: right;
 }

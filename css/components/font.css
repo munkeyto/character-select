@@ -1,0 +1,12 @@
+h1, h2, h3, h4 {
+  font-family: var(--font-h);
+  color: var(--font-color);
+}
+
+h1 {
+  margin-top: 2.5%;
+}
+
+p {
+  font-family: var(--font-p);
+}
