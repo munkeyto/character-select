@@ -11,7 +11,7 @@
 }
 
 body {
-  background-image: url('../images/background/map-notext.gif');
+  background-image: url('../assets/images/background/map-notext.gif');
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: -20%;
