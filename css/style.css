@@ -1,0 +1,16 @@
+@import url('components/index.css');
+
+/* defaults */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url('../images/background/map-notext.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 15%;
+  background-position-x: 50%;
+  background-color: #004498;
+}

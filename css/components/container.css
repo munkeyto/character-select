@@ -1,0 +1,39 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header header header"
+    "player-one character-select character-select cpu";
+  height: 100vh;
+}
+
+.header { 
+  grid-area: header; 
+  text-align: center;
+}
+
+.player-one { 
+  grid-area: player-one; 
+  align-self: end;
+}
+
+.character-select {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+  ". . . . . . . ."
+  ". . . . . . . .";
+  grid-area: character-select;
+  text-align: center;
+  align-self: end;
+}
+
+.cpu { 
+  grid-area: cpu; 
+  align-self: end;
+  text-align: right;
+}
