@@ -1,17 +1,21 @@
 .container {
-  text-align: center;
-}
-
-.header { 
-
+  height: 100vh;
+  
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-position-x: 50%; */
 }
 
 .char-portraits { 
   display: flex;
   justify-content: space-between;
 }
+.char-portraits p { 
+  /* font-size: 2rem; */
+}
 
 .character-select {
+  padding-top: 6%;
 }
 
 .row {

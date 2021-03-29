@@ -1,5 +1,5 @@
 .img-char {
-  width: 100%;
+  width: 80%;
 }
 .img-flip{
   transform: scaleX(-1);
@@ -7,6 +7,12 @@
 }
 
 .player-one-frame{
+  background-color: blue;
+  border: solid blue 4px;
+  z-index: 1;
+}
+
+.cpu-frame{
   background-color: blue;
   border: solid blue 4px;
   z-index: 1;

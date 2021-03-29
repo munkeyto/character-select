@@ -12,11 +12,11 @@
 }
 
 body {
-  background-image: url('../assets/images/background/map-notext.gif');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 50%;
   background-color: #004498;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/background/map-notext.gif);
+  background-size: cover;
+  background-position-y: 180%;
 }
 
 :root {
