@@ -1,36 +1,20 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1.5fr .5fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "header header header header"
-    "char-portraits char-portraits char-portraits char-portraits"
-    ". character-select character-select .";
-  height: 95vh;
-}
-
-.header { 
-  grid-area: header; 
+.container {
   text-align: center;
 }
 
+.header { 
+
+}
+
 .char-portraits { 
-  grid-area: char-portraits; 
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8%;
 }
 
 .character-select {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 2fr;
-  gap: 0px 0px;
-  align-items: center;
-  grid-template-areas:
-  ". . . . . . . ."
-  ". . . . . . . .";
-  grid-area: character-select;
-  
+}
+
+.row {
+  display: flex;
+  justify-content: center;
 }

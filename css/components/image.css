@@ -1,8 +1,13 @@
 .img-char {
-  width: 125%;
+  width: 100%;
 }
 .img-flip{
   transform: scaleX(-1);
   float: right;
 }
 
+.player-one-frame{
+  background-color: blue;
+  border: solid blue 4px;
+  z-index: 1;
+}

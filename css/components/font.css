@@ -10,3 +10,10 @@ h1 {
 p {
   font-family: var(--font-p);
 }
+
+.font-cpu {
+  color: red;
+  text-align: center;
+  padding: 1%;
+  display: none;
+}
