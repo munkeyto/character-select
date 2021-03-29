@@ -1,0 +1,29 @@
+.char-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.char-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-char {
+  width: 80%;
+  display: flex;
+}  
+.img-flip{
+  transform: scaleX(-1);
+  float: right;
+}  
+
+.char-name {
+  font-size: 2rem;
+  padding-top: 3%;
+}
+
+.char-country {
+  justify-content: center;
+  text-align: center;
+}

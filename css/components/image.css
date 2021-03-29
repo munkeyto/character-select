@@ -1,19 +1,10 @@
-.img-char {
-  width: 80%;
-}
-.img-flip{
-  transform: scaleX(-1);
-  float: right;
-}
-
 .player-one-frame{
   background-color: blue;
   border: solid blue 4px;
-  z-index: 1;
+  z-index: 2;
 }
-
 .cpu-frame{
-  background-color: blue;
-  border: solid blue 4px;
+  background-color: red;
+  border: solid red 4px;
   z-index: 1;
 }
