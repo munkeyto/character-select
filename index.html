@@ -13,7 +13,7 @@
   <div class="char-info-container">
     <div class="char-details-container">
       <div>
-        <img class="img-char" src="assets/images/portrait/ryu.gif" alt="">
+        <img class="img-char" src="assets/images/portrait/ryu.gif" alt="ryu">
       </div>
       <div class="center-elements">
         <div class="char-name">
@@ -73,6 +73,26 @@
 
 <script>
   
+  const characters = {
+    blanka: {name: "BLANKA", portrait: "blanka", flag: "br"},
+    ryu: {name: "RYU", portrait: "ryu", flag: "jp"},
+    boxer: {name: "BALROG", portrait: "boxer", flag: "us"},
+    cammy: {name: "CAMMY", portrait: "cammy", flag: "gb"},
+    chunli: {name: "CHUN-LI", portrait: "chun-li", flag: "cn"},
+    claw: {name: "VEGA", portrait: "claw", flag: "es"},
+    deejay: {name: "DEEJAY", portrait: "deejay", flag: "jm"},
+    dhalsim: {name: "DHALSIM", portrait: "dhalsim", flag: "in"},
+    dictator: {name: "M. BISON", portrait: "dictator", flag: "th"},
+    ehonda: {name: "E. HONDA", portrait: "ehonda", flag: "jp"},
+    feilong: {name: "FEI LONG", portrait: "feilong", flag: "hk"},
+    guile: {name: "GUILE", portrait: "guile", flag: "us"},
+    ken: {name: "KEN", portrait: "ken", flag: "us"},
+    ryu: {name: "RYU", portrait: "ryu", flag: "jp"},
+    sagat: {name: "SAGAT", portrait: "sagat", flag: "th"},
+    thawk: {name: "T. HAWK", portrait: "thawk", flag: "mx"},
+    zangief: {name: "ZANGIEF", portrait: "zangief", flag: "ru"},
+  }
+  console.log(`img src="assets/images/characters/${characters.blanka.portrait}.gif"`);
   
   const selectCharacter = document.querySelectorAll('.card-character');
 
