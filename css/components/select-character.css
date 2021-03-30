@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
 }
+
 .card-character {
   height: 120px;
   width: auto;
@@ -14,20 +15,36 @@
 .card-character img:hover{
   background-color: red;
 }
+
 .card-top-left-char {
   border: solid white 2px;
 }
+
 .card-top-char {
   border-top: solid white 2px;
   border-right: solid white 2px;
   border-bottom: solid white 2px;
 }
+
 .card-bottom-left-char {
   border-left: solid white 2px;
   border-right: solid white 2px;
   border-bottom: solid white 2px;
 }
+
 .card-bottom-char {
   border-right: solid white 2px;
   border-bottom: solid white 2px;
+}
+
+.player-one-frame{
+  background-color: blue;
+  border: solid blue 4px;
+  z-index: 2;
+}
+
+.cpu-frame{
+  background-color: red;
+  border: solid red 4px;
+  z-index: 1;
 }
