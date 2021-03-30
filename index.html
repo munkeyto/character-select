@@ -10,28 +10,32 @@
 </head>
 <body>
 
-  <div class="char-info">
-    <div class="char-details">
-      <div class="char-portrait">
+  <div class="char-info-container">
+    <div class="char-details-container">
+      <div>
         <img class="img-char" src="assets/images/portrait/ryu.gif" alt="">
       </div>
-      <div class="char-name">
-        <p class="font-center">RYU</p>
-      </div>
-      <div class="char-country">
-        <p>JAPAN</p>
+      <div class="center-elements">
+        <div class="char-name">
+          <p>RYU</p>
+        </div>
+        <div>
+          <img class="flag" src="https://www.countryflags.io/jp/flat/64.png">
+        </div>
       </div>
     </div>
 
-    <div class="char-details">
-      <div class="char-portrait">
+    <div class="char-details-container">
+      <div>
         <img class="img-char img-flip" src="assets/images/portrait/sagat.gif" alt="">
       </div>
-      <div class="char-name">
-        <p class="font-center">SAGAT</p>
-      </div>
-      <div class="char-country">
-        <p>THAILAND</p>
+      <div class="center-elements">
+        <div class="char-name text-align-right">
+          <p>SAGAT</p>
+        </div>
+        <div class="text-align-right">
+          <img class="flag" src="https://www.countryflags.io/th/flat/64.png">
+        </div>
       </div>
     </div>
   </div>
@@ -68,6 +72,8 @@
   <audio id="audio-theme" src=""></audio>
 
 <script>
+  
+  
   const selectCharacter = document.querySelectorAll('.card-character');
 
   function playSelectAudio() {

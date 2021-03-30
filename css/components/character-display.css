@@ -1,10 +1,10 @@
-.char-info {
+.char-info-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.char-details {
+.char-details-container {
   display: flex;
   flex-direction: column;
 }
@@ -23,7 +23,10 @@
   padding-top: 3%;
 }
 
-.char-country {
-  justify-content: center;
+.center-elements {
   text-align: center;
+}
+
+.flag {
+  width: 25%;
 }
