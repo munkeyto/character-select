@@ -12,15 +12,15 @@
 
   <div class="char-info-container">
     <div class="char-details-container">
-      <div>
+      <div id="player-one-img">
         <img class="img-char" src="assets/images/portrait/ryu.gif" alt="ryu">
       </div>
       <div class="center-elements">
-        <div class="char-name">
+        <div id="player-one-name" class="char-name">
           <p>RYU</p>
         </div>
-        <div>
-          <img id="p1flag" class="flag" src="https://www.countryflags.io/jp/flat/64.png">
+        <div id="player-one-flag" >
+          <img class="flag" src="https://www.countryflags.io/jp/flat/64.png">
         </div>
       </div>
     </div>
@@ -50,10 +50,10 @@
       <div class="card-character card-top-char"><img class="charSrc" id="ehonda" name="char" src="assets/images/characters/ehonda.gif" alt=""></div>
       <div id="blanka" class="card-character card-top-char"><img class="charSrc" id="blanka" name="char" src="assets/images/characters/blanka.gif" alt=""></div>
       <div id="guile" class="card-character card-top-char"><img class="charSrc" src="assets/images/characters/guile.gif" alt=""></div>
-      <div id="th" class="card-character card-top-char"><img class="charSrc" src="assets/images/characters/thawk.gif" alt=""></div>
-      <div id="fe" class="card-character card-top-char"><img class="charSrc" src="assets/images/characters/feilong.gif" alt=""></div>
-      <div id="bo" class="card-character card-top-char"><img class="charSrc" src="assets/images/characters/boxer.gif" alt=""></div>
-      <div id="sa" class="card-character card-top-char"><img class="charSrc" src="assets/images/characters/sagat.gif" alt=""></div>
+      <div class="card-character card-top-char"><img class="charSrc" src="assets/images/characters/thawk.gif" alt=""></div>
+      <div class="card-character card-top-char"><img class="charSrc" src="assets/images/characters/feilong.gif" alt=""></div>
+      <div class="card-character card-top-char"><img class="charSrc" src="assets/images/characters/boxer.gif" alt=""></div>
+      <div class="card-character card-top-char"><img class="charSrc" src="assets/images/characters/sagat.gif" alt=""></div>
     </div>
 
     <div class="row">
@@ -95,7 +95,11 @@
   }
 
   // get our elements 
-  const selectCharacter = document.querySelectorAll('.charSrc');
+  const characterIcons = document.querySelectorAll('.charSrc');
+  const playerOneImg = document.getElementById('player-one-img');
+  const playerOneName = document.getElementById('player-one-name');
+  const playerOneFlag = document.getElementById('player-one-flag');
+
   
   // functions
   const playSelectAudio = () => {
@@ -104,25 +108,34 @@
     audio.play();
   }
   
-  let getCharName = (character) => {
-    let charUrl = character.getAttribute('src'); 
+  const getNameString = (character) => {
+    let imgSrc = character.getAttribute('src'); 
     const regexp = /\w+(?=\.gif)/;
-    let charName = charUrl.match(regexp)[0];
-    console.log(charName);
-    return charName;
+    let nameString = imgSrc.match(regexp)[0];
+    return nameString;
   }
 
-  let getCharData = (character) => {
-    for ( const portrait in characters) {
-      console.log(`${character}.${portrait}`);
-    }
+  const getCharObjInfo = (nameString) => {
+    const charImg = characters[nameString].portrait;
+    const charName = characters[nameString].name;
+    const charFlag = characters[nameString].flag;
+    
+    playerOneImg.innerHTML = `<img class="img-char" src="assets/images/portrait/${charImg}.gif" alt="${charName}">`
+    playerOneName.innerHTML = `<p>${charName}</p>`
+    playerOneFlag.innerHTML = `<img class="flag" src="https://www.countryflags.io/${charFlag}/flat/64.png">`
   }
+
+//   const updateSelect = () => {
+  
+// }
+
 
   // event listeners
-  selectCharacter.forEach(character => character.addEventListener('mouseenter', () => {
-    //playSelectAudio();
+  characterIcons.forEach(character => character.addEventListener('mouseenter', () => {
+    playSelectAudio();
     // getCharName(character);
-    getCharData(getCharName(character));
+    getCharObjInfo(getNameString(character));
+    // upDateSelect(get);
   }));
   </script>
 

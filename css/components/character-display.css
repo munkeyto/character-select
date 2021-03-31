@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 1%;
 }
 
 .char-details-container {
@@ -12,6 +13,10 @@
 .img-char {
   width: 80%;
   display: flex;
+  background-color: white;
+  border: var(--font-color) solid 4px;
+  margin-top: 2%;
+  margin: auto;
 }  
 .img-flip{
   transform: scaleX(-1);
