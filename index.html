@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/style.css">
-  <title>Street Fighter 2 Character Select</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+  <title>Character Select</title>
 </head>
 <body>
 
@@ -39,11 +41,15 @@
       </div>
     </div>
   </div>
+  <div id="sound-toggle" class="center-elements">
+    <i class="fas fa-volume-mute fa-3x icon-style""></i>
+    <!-- <i class="fas fa-volume-up fa-3x icon-style"></i> -->
+  </div>
   
 
   <div class="select-character">
-    <div class="font-center">
-      <h1>PLAYER SELECT</h1>
+    <div class="row">
+        <h1 class="player-select">PLAYER SELECT</h1>
     </div>
     <div class="row">
       <div class="card-character card-top-left-char"><img class="charSrc" src="assets/images/characters/ryu.gif" alt=""></div>
@@ -55,7 +61,7 @@
       <div class="card-character card-top-char"><img class="charSrc" src="assets/images/characters/boxer.gif" alt=""></div>
       <div class="card-character card-top-char"><img class="charSrc" src="assets/images/characters/sagat.gif" alt=""></div>
     </div>
-
+    
     <div class="row">
       <div id="ke" class="card-character card-bottom-left-char"><img class="charSrc" src="assets/images/characters/ken.gif" alt=""></div>
       <div id="ch" class="card-character card-bottom-char"><img class="charSrc" src="assets/images/characters/chunli.gif" alt=""></div>
@@ -65,7 +71,7 @@
       <div id="de" class="card-character card-bottom-char"><img class="charSrc" src="assets/images/characters/deejay.gif" alt=""></div>
       <div id="cl" class="card-character card-bottom-char"><img class="charSrc" src="assets/images/characters/claw.gif" alt=""></div>
       <div id="di" class="card-character card-bottom-char"><img class="charSrc" src="assets/images/characters/dictator.gif" alt=""></div>
-    </div>
+    </div>  
   </div>
   
   <audio id="audio-select" src="assets/sounds/select.wav"></audio>

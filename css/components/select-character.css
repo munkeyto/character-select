@@ -3,6 +3,10 @@
   justify-content: center;
 }
 
+.player-select{
+  padding-bottom: .5%;
+}
+
 .card-character {
   height: 120px;
   width: auto;

@@ -16,11 +16,18 @@ body {
   background-repeat: no-repeat;
   background-image: url(../assets/images/background/map-notext.gif);
   background-size: cover;
-  background-position-y: 90%;
+  background-position-y: 230%;
 }
 
 :root {
   --font-h: 'Press Start 2P', cursive;
   --font-p: 'Press Start 2P', cursive;
   --font-color: #FFD21D;
+}
+
+@media (min-width: 1920px) {
+  body {
+    padding: 4% 15%;
+    background-position-y: 135%;
+  }
 }

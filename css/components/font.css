@@ -8,6 +8,11 @@ p {
   color: var(--font-color);
 }
 
-.font-center{
+.font-center {
   text-align: center;
+}
+
+.icon-style {
+  color: red;
+  margin-bottom: .75%;
 }
