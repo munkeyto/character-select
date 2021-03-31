@@ -20,7 +20,6 @@
 }  
 .img-flip{
   transform: scaleX(-1);
-  float: right;
 }  
 
 .char-name {
