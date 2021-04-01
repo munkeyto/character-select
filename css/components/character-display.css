@@ -36,6 +36,9 @@
 }
 
 @media (min-width: 1920px) {
+  .char-info-container {
+    margin-top: 3%;
+  }
   .img-char {
     width: 77%;
   }
