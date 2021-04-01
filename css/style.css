@@ -16,7 +16,7 @@ body {
   background-repeat: no-repeat;
   background-image: url(../assets/images/background/map-notext.gif);
   background-size: cover;
-  background-position-y: 230%;
+  background-position-y: 155%;
 }
 
 :root {
