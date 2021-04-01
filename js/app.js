@@ -19,19 +19,38 @@
     zangief: {name: "ZANGIEF", portrait: "zangief", flag: "ru"},
   }
 
-  // elements 
+  const selectAudio = new Audio('assets/sounds/select.wav');
+  const playSelectAudio = () => {
+    selectAudio.currentTime = 0;
+    selectAudio.play();
+  }
+  
+  const iconToggleOn = document.getElementById('icon-toggle-on');
+  const iconToggleOff = document.getElementById('icon-toggle-off');
+  const themeToggles = document.querySelectorAll('.theme-toggle');
+  let count = 0;
+  
+  const themeAudio = new Audio('assets/sounds/theme.mp3');
+  const playMenuTheme = () => {
+    if (count === 0) {
+      count = 1;
+      themeAudio.play();
+      themeAudio.loop = true;
+      iconToggleOff.classList.add('hide')
+      iconToggleOn.classList.remove('hide');
+    } else {
+      count = 0;
+      themeAudio.pause();
+      iconToggleOn.classList.add('hide')
+      iconToggleOff.classList.remove('hide');
+    }
+  }
+  
   const characterIcons = document.querySelectorAll('.charSrc');
+  
   const playerOneImg = document.getElementById('player-one-img');
   const playerOneName = document.getElementById('player-one-name');
   const playerOneFlag = document.getElementById('player-one-flag');
-
-  
-  // functions
-  const playSelectAudio = () => {
-    const audio = document.querySelector('#audio-select');
-    audio.currentTime = 0;
-    audio.play();
-  }
   
   const getNameString = (character) => {
     let imgSrc = character.getAttribute('src'); 
@@ -55,3 +74,5 @@
     playSelectAudio();
     getCharObjInfo(getNameString(character));
   }));
+
+  themeToggles.forEach(toggle => toggle.addEventListener('click', playMenuTheme));

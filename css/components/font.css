@@ -12,7 +12,17 @@ p {
   text-align: center;
 }
 
-.icon-style {
+.icon-style-pause {
   color: red;
   margin-bottom: .75%;
 }
+
+.icon-style-play {
+  color: var(--font-color);
+  margin-bottom: .75%;
+}
+
+.hide {
+  display: none;
+}
+

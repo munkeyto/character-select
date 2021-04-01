@@ -27,7 +27,7 @@ body {
 
 @media (min-width: 1920px) {
   body {
-    padding: 4% 15%;
-    background-position-y: 135%;
+    padding: 2% 15%;
+    background-position-y: 99%;
   }
 }
