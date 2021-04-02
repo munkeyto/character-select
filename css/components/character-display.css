@@ -12,7 +12,7 @@
 }
 
 .img-char {
-  width: 60%;
+  /* width: 60%; */
   display: flex;
   background-color: white;
   border: var(--font-color) solid 4px;
