@@ -19,7 +19,14 @@
     zangief: {name: "ZANGIEF", portrait: "zangief", flag: "ru"},
   }
   
-  // insertCoin
+  const insertCoin = document.querySelector('.insert-coin-wrapper');
+  console.log(insertCoin);
+
+  const insertCoinAudio = new Audio('assets/sounds/insertCoin.wav');
+  const playInsertCoin = () => {
+    insertCoinAudio.play();
+    insertCoin.classList.add('hide');
+  }
   
   const iconToggleOn = document.getElementById('icon-toggle-on');
   const iconToggleOff = document.getElementById('icon-toggle-off');
@@ -27,18 +34,18 @@
   let count = 0;
   
   const themeAudio = new Audio('assets/sounds/theme.mp3');
-  themeAudio.volume = 0.6;
+  themeAudio.volume = 0.5;
   const playMenuTheme = () => {
     if (count === 0) {
       count = 1;
       themeAudio.play();
       themeAudio.loop = true;
-      iconToggleOff.classList.add('hide')
+      iconToggleOff.classList.add('hide');
       iconToggleOn.classList.remove('hide');
     } else {
       count = 0;
       themeAudio.pause();
-      iconToggleOn.classList.add('hide')
+      iconToggleOn.classList.add('hide');
       iconToggleOff.classList.remove('hide');
     }
   }
@@ -66,19 +73,22 @@
     playerOneFlag.innerHTML = `<img class="flag" src="https://www.countryflags.io/${charFlag}/flat/64.png">`
   }
 
-  const hoverAudio = new Audio('assets/sounds/hoverSelect.wav');
   const playHoverAudio = () => {
+    const hoverAudio = new Audio('assets/sounds/hoverSelect.wav');
     hoverAudio.currentTime = 0;
     hoverAudio.play();
   }
 
-  const selectAudio = new Audio('assets/sounds/clickSelect.wav');
   const playSelectAudio = () => {
-    selectAudio.currentTime = 0;
+    const selectAudio = new Audio('assets/sounds/clickSelect.wav');
     selectAudio.play();
   }
 
   // event listeners
+  insertCoin.addEventListener('click', () => {
+    playInsertCoin();
+  });
+
   characterIcons.forEach(character => character.addEventListener('mouseenter', () => {
     playHoverAudio();
     getCharObjInfo(getNameString(character));
