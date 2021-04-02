@@ -12,7 +12,6 @@
 }
 
 .img-char {
-  /* width: 60%; */
   display: flex;
   background-color: white;
   border: var(--font-color) solid 4px;
@@ -51,8 +50,5 @@
 @media (min-width: 1920px) {
   .top-display {
     margin: 3% 9% 0 9%;
-  }
-  .img-char {
-    width: 68%;
   }
 }
