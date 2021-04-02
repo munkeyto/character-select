@@ -1,12 +1,10 @@
 .char-info-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin: 4% 9% 0 9%;
 }
 
 .char-details-container {
-  display: flex;
   flex-direction: column;
 }
 .char-details-container h1 {
@@ -30,12 +28,21 @@
   padding-top: 3%;
 }
 
-.center-elements {
-  text-align: center;
-}
-
 .flag {
   width: 25%;
+}
+
+.insert-coin-wrapper {
+  align-self: center;
+  justify-content: center;
+}
+
+.insert-coin {
+  font-size: 4rem;
+}
+
+.touch-screen {
+  font-size: 2rem;
 }
 
 @media (min-width: 1920px) {

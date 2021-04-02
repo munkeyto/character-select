@@ -19,6 +19,8 @@
     zangief: {name: "ZANGIEF", portrait: "zangief", flag: "ru"},
   }
   
+  // insertCoin
+  
   const iconToggleOn = document.getElementById('icon-toggle-on');
   const iconToggleOff = document.getElementById('icon-toggle-off');
   const themeToggles = document.querySelectorAll('.theme-toggle');
