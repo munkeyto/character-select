@@ -23,6 +23,7 @@
   console.log(insertCoin);
 
   const insertCoinAudio = new Audio('assets/sounds/insertCoin.wav');
+  insertCoinAudio.volume = 0.3;
   const playInsertCoin = () => {
     insertCoinAudio.play();
     insertCoin.classList.add('animate-flicker');
@@ -37,7 +38,7 @@
   
   let count = 0;
   const themeAudio = new Audio('assets/sounds/theme.mp3');
-  themeAudio.volume = 0.5;
+  themeAudio.volume = 0.3;
   const playMenuTheme = () => {
     if (count === 0) {
       count = 1;
@@ -78,12 +79,14 @@
 
   const playHoverAudio = () => {
     const hoverAudio = new Audio('assets/sounds/hoverSelect.wav');
+    hoverAudio.volume = 0.5;
     hoverAudio.currentTime = 0;
     hoverAudio.play();
   }
 
+  const selectAudio = new Audio('assets/sounds/clickSelect.wav');
+  selectAudio.volume = 0.5;
   const playSelectAudio = () => {
-    const selectAudio = new Audio('assets/sounds/clickSelect.wav');
     selectAudio.play();
   }
 
