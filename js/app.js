@@ -18,12 +18,6 @@
     thawk: {name: "T. HAWK", portrait: "thawk", flag: "mx"},
     zangief: {name: "ZANGIEF", portrait: "zangief", flag: "ru"},
   }
-
-  const selectAudio = new Audio('assets/sounds/select.wav');
-  const playSelectAudio = () => {
-    selectAudio.currentTime = 0;
-    selectAudio.play();
-  }
   
   const iconToggleOn = document.getElementById('icon-toggle-on');
   const iconToggleOff = document.getElementById('icon-toggle-off');
@@ -31,6 +25,7 @@
   let count = 0;
   
   const themeAudio = new Audio('assets/sounds/theme.mp3');
+  themeAudio.volume = 0.6;
   const playMenuTheme = () => {
     if (count === 0) {
       count = 1;
@@ -69,10 +64,27 @@
     playerOneFlag.innerHTML = `<img class="flag" src="https://www.countryflags.io/${charFlag}/flat/64.png">`
   }
 
+  const hoverAudio = new Audio('assets/sounds/hoverSelect.wav');
+  const playHoverAudio = () => {
+    hoverAudio.currentTime = 0;
+    hoverAudio.play();
+  }
+
+  const selectAudio = new Audio('assets/sounds/clickSelect.wav');
+  const playSelectAudio = () => {
+    selectAudio.currentTime = 0;
+    selectAudio.play();
+  }
+
   // event listeners
   characterIcons.forEach(character => character.addEventListener('mouseenter', () => {
-    playSelectAudio();
+    playHoverAudio();
     getCharObjInfo(getNameString(character));
+  }));
+
+  characterIcons.forEach(character => character.addEventListener('click', () => {
+    playSelectAudio();
+    console.log('test');
   }));
 
   themeToggles.forEach(toggle => toggle.addEventListener('click', playMenuTheme));

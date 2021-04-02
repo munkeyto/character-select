@@ -9,6 +9,9 @@
   display: flex;
   flex-direction: column;
 }
+.char-details-container h1 {
+  margin-bottom: 3%;
+}
 
 .img-char {
   width: 50%;
@@ -40,6 +43,6 @@
     margin-top: 3%;
   }
   .img-char {
-    width: 77%;
+    width: 68%;
   }
 }

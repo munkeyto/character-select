@@ -25,30 +25,17 @@
 }
 
 .card-top-char {
-  border-top: solid white 2px;
-  border-right: solid white 2px;
-  border-bottom: solid white 2px;
+  border: solid white 2px;
+  /* border-left: 0; */
 }
 
 .card-bottom-left-char {
-  border-left: solid white 2px;
-  border-right: solid white 2px;
-  border-bottom: solid white 2px;
+  border: solid white 2px;
+  /* border-top: 0; */
 }
 
 .card-bottom-char {
-  border-right: solid white 2px;
-  border-bottom: solid white 2px;
-}
-
-.player-one-frame{
-  background-color: blue;
-  border: solid blue 4px;
-  z-index: 2;
-}
-
-.cpu-frame{
-  background-color: red;
-  border: solid red 4px;
-  z-index: 1;
+  border: solid white 2px;
+  /* border-top: 0;
+  border-left: 0; */
 }
