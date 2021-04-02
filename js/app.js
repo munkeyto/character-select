@@ -25,7 +25,10 @@
   const insertCoinAudio = new Audio('assets/sounds/insertCoin.wav');
   const playInsertCoin = () => {
     insertCoinAudio.play();
-    insertCoin.classList.add('hide');
+    insertCoin.classList.add('animate-flicker');
+    setTimeout(() => {
+      insertCoin.classList.add('hide');
+    }, 1000); 
   }
   
   const iconToggleOn = document.getElementById('icon-toggle-on');
@@ -84,6 +87,13 @@
     selectAudio.play();
   }
 
+  const characterSelectEffect = (character) => {
+    character.classList.add('animate-flicker');
+    setTimeout(() => {
+      character.classList.remove('animate-flicker');
+    }, 1000); 
+  }
+
   // event listeners
   insertCoin.addEventListener('click', () => {
     playInsertCoin();
@@ -96,7 +106,7 @@
 
   characterIcons.forEach(character => character.addEventListener('click', () => {
     playSelectAudio();
-    console.log('test');
+    characterSelectEffect(character);
   }));
 
   themeToggles.forEach(toggle => toggle.addEventListener('click', playMenuTheme));
