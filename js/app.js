@@ -34,8 +34,8 @@
   const iconToggleOn = document.getElementById('icon-toggle-on');
   const iconToggleOff = document.getElementById('icon-toggle-off');
   const themeToggles = document.querySelectorAll('.theme-toggle');
-  let count = 0;
   
+  let count = 0;
   const themeAudio = new Audio('assets/sounds/theme.mp3');
   themeAudio.volume = 0.5;
   const playMenuTheme = () => {
