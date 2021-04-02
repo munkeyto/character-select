@@ -1,22 +1,21 @@
-.char-info-container {
+.top-display {
   display: flex;
   justify-content: space-between;
-  margin: 4% 9% 0 9%;
+  margin: 1% 5% -6% 5%;
 }
 
 .char-details-container {
   flex-direction: column;
 }
-.char-details-container h1 {
+.char-details-container h2 {
   margin-bottom: 3%;
 }
 
 .img-char {
-  width: 50%;
+  width: 60%;
   display: flex;
   background-color: white;
   border: var(--font-color) solid 4px;
-  margin-top: 2%;
   margin: auto;
 }  
 .img-flip{
@@ -35,10 +34,14 @@
 .insert-coin-wrapper {
   align-self: center;
   justify-content: center;
+  color: red;
+}
+.insert-coin-wrapper p{
+  color: red;
 }
 
 .insert-coin {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .touch-screen {
@@ -46,8 +49,8 @@
 }
 
 @media (min-width: 1920px) {
-  .char-info-container {
-    margin-top: 3%;
+  .top-display {
+    margin: 3% 9% 0 9%;
   }
   .img-char {
     width: 68%;

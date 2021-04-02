@@ -8,14 +8,14 @@
     claw: {name: "VEGA", portrait: "claw", flag: "es"},
     deejay: {name: "DEEJAY", portrait: "deejay", flag: "jm"},
     dhalsim: {name: "DHALSIM", portrait: "dhalsim", flag: "in"},
-    dictator: {name: "M. BISON", portrait: "dictator", flag: "th"},
-    ehonda: {name: "E. HONDA", portrait: "ehonda", flag: "jp"},
+    dictator: {name: "M.BISON", portrait: "dictator", flag: "th"},
+    ehonda: {name: "E.HONDA", portrait: "ehonda", flag: "jp"},
     feilong: {name: "FEI LONG", portrait: "feilong", flag: "hk"},
     guile: {name: "GUILE", portrait: "guile", flag: "us"},
     ken: {name: "KEN", portrait: "ken", flag: "us"},
     ryu: {name: "RYU", portrait: "ryu", flag: "jp"},
     sagat: {name: "SAGAT", portrait: "sagat", flag: "th"},
-    thawk: {name: "T. HAWK", portrait: "thawk", flag: "mx"},
+    thawk: {name: "T.HAWK", portrait: "thawk", flag: "mx"},
     zangief: {name: "ZANGIEF", portrait: "zangief", flag: "ru"},
   }
   
